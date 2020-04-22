@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:WHMIS"
+             x:Class="WHMIS.Views.PocketGuide.PageWhmisLaw">
+    <local:TemplateWHMIS PageTitle="WHMIS is the Law!">
+        <local:TemplateWHMIS.Body>
+            <StackLayout>
+                <Label LineBreakMode="WordWrap">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="Canadian companies that have hazardous products at the workplace must comply with the WHMIS regulations." />
+                            <Span Text="{x:Static x:Environment.NewLine}" />
+                            <Span Text="{x:Static x:Environment.NewLine}" />
+
+                            <Span Text="Penalties and Fines for Non-Compliance" FontAttributes="Bold" />
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+
+                <BoxView Color="Black" WidthRequest ="10000" HeightRequest="1"/>
+                <Label Text="Fines and penalties vary from province to province but can include a fine of up to $50,000 and/or up to 12 months in jail."/>
+                <Label Text="{x:Static x:Environment.NewLine}"/>
+                <Label Text="{x:Static x:Environment.NewLine}"/>
+                <Image HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"  Source="{local:ImageResource Source={x:Static local:Strings.ImgWhmisPicLadyLaw}}"  />
+            </StackLayout>
+        </local:TemplateWHMIS.Body>
+    </local:TemplateWHMIS>
+</ContentPage>

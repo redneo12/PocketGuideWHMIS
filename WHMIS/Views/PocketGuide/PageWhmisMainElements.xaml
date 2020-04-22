@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:WHMIS"
+             x:Class="WHMIS.Views.PocketGuide.PageWhmisMainElements">
+    <local:TemplateWHMIS PageTitle="WHMIS - 3 Main Elements">
+        <local:TemplateWHMIS.Body>
+            <Label LineBreakMode="WordWrap">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="There are 3 main elements to WHMIS:" />
+                        <Span Text="{x:Static x:Environment.NewLine}" />
+                        <Span Text="{x:Static x:Environment.NewLine}" />
+
+                        <Span Text="1. Labels" FontAttributes="Bold"/>
+                        <Span Text=" - identify the type of hazard, alert workers to the dangers and provide safety precautions."/>
+                        <Span Text="{x:Static x:Environment.NewLine}" />
+                        <Span Text="{x:Static x:Environment.NewLine}" />
+
+                        <Span Text="2. Safety Data Sheets (SDSs)" FontAttributes="Bold" />
+                        <Span Text=" - provide detailed information about hazardous products including the dangers, protection measures and what to do in an emergency."/>
+                        <Span Text="{x:Static x:Environment.NewLine}" />
+                        <Span Text="{x:Static x:Environment.NewLine}" />
+
+                        <Span Text="3. Worker Education" FontAttributes="Bold" />
+                        <Span Text=" - keeps workers informed on how WHMIS applies at their workplace, and how they can work safely with hazardous products every day."/>
+                        <Span Text="{x:Static x:Environment.NewLine}" />
+                        <Span Text="{x:Static x:Environment.NewLine}" />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+        </local:TemplateWHMIS.Body>
+    </local:TemplateWHMIS>
+</ContentPage>

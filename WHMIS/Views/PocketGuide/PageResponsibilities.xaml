@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:WHMIS"
+             x:Class="WHMIS.Views.PocketGuide.PageResponsibilities">
+    <local:TemplateWHMIS PageTitle="Responsibilities">
+        <local:TemplateWHMIS.Body>
+            <StackLayout>
+                <Label Text="Supplier Responsibilities:" FontAttributes="Bold"/>
+                <BoxView Color="Black" WidthRequest ="10000" HeightRequest="1"/>
+                <Label Text="WHMIS Legislation requires suppliers or manufacturers of hazardous products to:"/>
+                <StackLayout Padding="5, 0, 5, 10" BackgroundColor="{Binding Source={x:Static local:Strings.ColYowGrey}}">
+                    <Label Text="• Classify materials into one or more of the hazard classes"/>
+                    <Label Text="• Provide Supplier Labels"/>
+                    <Label Text="• Supply Safety Data Sheets (SDSs)"/>
+                </StackLayout>
+
+                <Label Text="Employer Responsibilities:" FontAttributes="Bold" Margin="0, 15, 0, 0"/>
+                <BoxView Color="Black" WidthRequest ="10000" HeightRequest="1"/>
+                <Label Text="WHMIS Legislation requires employers to:"/>
+                <StackLayout Padding="5, 0, 5, 10" BackgroundColor="{Binding Source={x:Static local:Strings.ColYowGrey}}">
+                    <Label Text="• Develop safe procedures for workers"/>
+                    <Label Text="• Provide workers with regular WHMIS training"/>
+                    <Label Text="• Ensure accurate SDSs are readily available"/>
+                    <Label Text="• Provide workplace labels as required"/>
+                </StackLayout>
+
+                <Label Text="Worker Responsibilities:" FontAttributes="Bold" Margin="0, 15, 0, 0"/>
+                <BoxView Color="Black" WidthRequest ="10000" HeightRequest="1"/>
+                <Label Text="WHMIS Legislation requires workers to:"/>
+                <StackLayout Padding="5, 0, 5, 10" BackgroundColor="{Binding Source={x:Static local:Strings.ColYowGrey}}">
+                    <Label Text="• Take regular WHMIS training and apply the knowledge on a day to day basis at the workplace"/>
+                    <Label Text="• Notify the employer or supplier if labels or SDSs are out of date, inaccurate, illegible or missing"/>
+                    <Label Text="• Use proper protective means and equipment such as gloves and goggles as required by other Occupational Health and Safety Regulations"/>
+                </StackLayout>
+
+            </StackLayout>
+        </local:TemplateWHMIS.Body>
+    </local:TemplateWHMIS>
+</ContentPage>

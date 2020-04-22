@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:WHMIS"
+             x:Class="WHMIS.Views.PocketGuide.PageOldWhmis">
+    <local:TemplateWHMIS PageTitle="Old WHMIS Symbols">
+        <local:TemplateWHMIS.Body>
+            <StackLayout  HorizontalOptions="Start">
+
+                <Label Text="No longer acceptable!" FontAttributes="Bold"/>
+                <BoxView Color="Black" WidthRequest ="10000" HeightRequest="1"/>
+
+                <Label Text="The old WHMIS (1988) system had different symbols (in black circles) which are no longer used today. If a worker encounters any of these symbols on labels or SDSs, they should report this to their supervisor or employer for updating."/>
+
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="200"/>
+                        <RowDefinition Height="200"/>
+                        <RowDefinition Height="200"/>
+                        <RowDefinition Height="200"/>
+                    </Grid.RowDefinitions>
+                    <Image Source="{local:ImageResource Source={x:Static local:Strings.ImgWhmisPicClassA}}" Grid.Column="0" Grid.Row="0"/>
+                    <Image Source="{local:ImageResource Source={x:Static local:Strings.ImgWhmisPicClassB}}" Grid.Column="1" Grid.Row="0"/>
+                    <Image Source="{local:ImageResource Source={x:Static local:Strings.ImgWhmisPicClassC}}" Grid.Column="0" Grid.Row="1"/>
+                    <Image Source="{local:ImageResource Source={x:Static local:Strings.ImgWhmisPicClassD1}}" Grid.Column="1" Grid.Row="1"/>
+                    <Image Source="{local:ImageResource Source={x:Static local:Strings.ImgWhmisPicClassD2}}" Grid.Column="0" Grid.Row="2"/>
+                    <Image Source="{local:ImageResource Source={x:Static local:Strings.ImgWhmisPicClassD3}}" Grid.Column="1" Grid.Row="2"/>
+                    <Image Source="{local:ImageResource Source={x:Static local:Strings.ImgWhmisPicClassF}}" Grid.ColumnSpan="2" Grid.Row="3" />
+                </Grid>
+
+
+            </StackLayout>
+        </local:TemplateWHMIS.Body>
+    </local:TemplateWHMIS>
+</ContentPage>

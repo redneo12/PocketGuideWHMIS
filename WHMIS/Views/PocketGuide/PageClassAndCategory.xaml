@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:WHMIS"
+             x:Class="WHMIS.Views.PocketGuide.PageClassAndCategory">
+    <local:TemplateWHMIS PageTitle="Class and Category">
+        <local:TemplateWHMIS.Body>
+            <StackLayout  HorizontalOptions="Start">
+                <Label Text="&quot;Class&quot; is the term WHMIS 2015 uses to describe different types of hazards which further allows them to be grouped with similar hazardous products."/>
+                <Label Text="&quot;Category&quot; is used to describe the sub-sections of the different classes. To determine what category something of the same class would fall into, there are rules and criteria based on how dangerous the hazardous product is."/>
+                <Label Text="Every hazard class has at least one category."/>
+                <Label Text="A category defines the severity or nature of the hazardous product. Hazard categories have been assigned the numbers 1, 2, 3 or more depending on the number of categories in a class."/>
+                <Label Text="When dealing with hazard classes, they could have sub-categories. A letter is used to designate these sub-categories, such as 1A, 1B, 1C and more."/>
+                <Label Text="Category 1 has the greatest hazard level (High Risk)."/>
+                <Label Text="Category 2 is less dangerous than Category 1, while"/>
+                <Label Text="Category 3 (Low Risk) is less hazardous than Category 2, and so on."/>
+
+
+            </StackLayout>
+        </local:TemplateWHMIS.Body>
+    </local:TemplateWHMIS>
+</ContentPage>

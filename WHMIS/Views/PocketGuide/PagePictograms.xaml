@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:WHMIS"
+             x:Class="WHMIS.Views.PocketGuide.PagePictograms">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style TargetType="Image">
+                <Setter Property="HeightRequest" Value="100"/>
+                <Setter Property="WidthRequest" Value="100"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <local:TemplateWHMIS PageTitle="Pictograms">
+        <local:TemplateWHMIS.Body>
+            <StackLayout  HorizontalOptions="Start" VerticalOptions="CenterAndExpand" Padding="0, 20, 0, 0">
+                <Grid RowSpacing="25">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    
+                    <Image Source="{local:ImageResource Source={x:Static local:Strings.ImgWhmisPicFire}}" Grid.Column="0" Grid.Row="0"/>
+                    <Label Text="Flame" FontSize="Large" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Grid.Column="1" Grid.Row="0"/>
+                    <StackLayout Grid.ColumnSpan="2" Grid.Row="1" HorizontalOptions="StartAndExpand" VerticalOptions="FillAndExpand">
+
+                        <Label Text="HAZARD:" FontAttributes="Bold"/>
+                        <Label Text="For fire hazards. Flammable gases, aerosols, liquids, and solids. Pyrophoric liquids, solids and gases. Self-heating substances and mixtures. Substances when in contact with water that emit flammable gases. Self-Reactive substances. Organic peroxides." />
+                        <Label Text="PICTOGRAM:" FontAttributes="Bold"/>
+                        <Label Text="A black flame inside a red diamond border." />
+                    </StackLayout>
+
+
+
+                    <Image Source="{local:ImageResource Source={x:Static local:Strings.ImgWhmisPicOxflame}}" Grid.Column="0" Grid.Row="2"/>
+                    <Label Text="Flame over Circle" FontSize="Large" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontAttributes="Bold" Grid.Column="1" Grid.Row="2"/>
+                    <StackLayout Grid.ColumnSpan="2" Grid.Row="3">
+                        <Label Text="HAZARD:" FontAttributes="Bold"/>
+                        <Label Text="For oxidizing hazards. Oxidizing gases, liquids and solids." />
+                        <Label Text="PICTOGRAM:" FontAttributes="Bold"/>
+                        <Label Text="A black flame over a circle inside a red diamond border." />
+                    </StackLayout>
+
+                    <Image Source="{local:ImageResource Source={x:Static local:Strings.ImgWhmisPicGas}}" Grid.Column="0" Grid.Row="4"/>
+                    <Label Text="Gas Cylinder" FontSize="Large" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontAttributes="Bold" Grid.Column="1" Grid.Row="4"/>
+                    <StackLayout Grid.ColumnSpan="2" Grid.Row="5">
+                        <Label Text="HAZARD:" FontAttributes="Bold"/>
+                        <Label Text="For gases under pressure. Compressed gas, liquified gas, refrigerated liquefied gas and dissolved gas." />
+                        <Label Text="PICTOGRAM:" FontAttributes="Bold"/>
+                        <Label Text="A black cylinder inside a red diamond border." />
+                    </StackLayout>
+
+                    <Image Source="{local:ImageResource Source={x:Static local:Strings.ImgWhmisPicCorrosive}}" Grid.Column="0" Grid.Row="6"/>
+                    <Label Text="Corrosion" FontSize="Large" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontAttributes="Bold" Grid.Column="1" Grid.Row="6"/>
+                    <StackLayout Grid.ColumnSpan="2" Grid.Row="7">
+                        <Label Text="HAZARD:" FontAttributes="Bold"/>
+                        <Label Text="For corrosive damage to metals, as well as skin and eyes. Corrosive to metals. Skin corrosion and irritation. Serious eye damage and irritation." />
+                        <Label Text="PICTOGRAM:" FontAttributes="Bold"/>
+                        <Label Text="A black picture of liquid being poured on metal and a hand inside a red diamond border." />
+                    </StackLayout>
+
+                    <Image Source="{local:ImageResource Source={x:Static local:Strings.ImgWhmisPicExplosive}}" Grid.Column="0" Grid.Row="8"/>
+                    <Label Text="Exploding Bomb" FontSize="Large" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontAttributes="Bold" Grid.Column="1" Grid.Row="8"/>
+                    <StackLayout Grid.ColumnSpan="2" Grid.Row="9">
+                        <Label Text="HAZARD:" FontAttributes="Bold"/>
+                        <Label Text="For explosion or reactivity hazards. Self-reactive substances. Organic peroxides." />
+                        <Label Text="PICTOGRAM:" FontAttributes="Bold"/>
+                        <Label Text="A black explosion inside a red diamond border." />
+                    </StackLayout>
+
+                    <Image Source="{local:ImageResource Source={x:Static local:Strings.ImgWhmisPicSkull}}" Grid.Column="0" Grid.Row="10"/>
+                    <Label Text="Skull and Crossbones" FontSize="Large" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontAttributes="Bold" Grid.Column="1" Grid.Row="10"/>
+                    <StackLayout Grid.ColumnSpan="2" Grid.Row="11">
+                        <Label Text="HAZARD:" FontAttributes="Bold"/>
+                        <Label Text="Can cause death or toxicity with short exposure to small amounts. Acute toxicity including oral, skin and inhalation." />
+                        <Label Text="PICTOGRAM:" FontAttributes="Bold"/>
+                        <Label Text="A black skull and crossbones inside a red diamond border." />
+                    </StackLayout>
+
+                    <Image Source="{local:ImageResource Source={x:Static local:Strings.ImgWhmisPicHealth}}" Grid.Column="0" Grid.Row="12"/>
+                    <Label Text="Health Hazard" FontSize="Large" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontAttributes="Bold" Grid.Column="1" Grid.Row="12"/>
+                    <StackLayout Grid.ColumnSpan="2" Grid.Row="13">
+                        <Label Text="HAZARD:" FontAttributes="Bold"/>
+                        <Label Text="May cause or be suspected of causing serious health effects. Respiratory or skin sensitization. Germ cell mutagenicity. Carcinogenicity. Reproductive toxicity. Specific target organ toxicity. Aspiration hazard." />
+                        <Label Text="PICTOGRAM:" FontAttributes="Bold"/>
+                        <Label Text="A black body with an internal explosion inside a red diamond border." />
+                    </StackLayout>
+
+                    <Image Source="{local:ImageResource Source={x:Static local:Strings.ImgWhmisPicExclamation}}" Grid.Column="0" Grid.Row="14"/>
+                    <Label Text="Exclamation Mark" FontSize="Large" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontAttributes="Bold" Grid.Column="1" Grid.Row="14"/>
+                    <StackLayout Grid.ColumnSpan="2" Grid.Row="15">
+                        <Label Text="HAZARD:" FontAttributes="Bold"/>
+                        <Label Text="May cause less serious health effects or damage the ozone layer. Acute toxicity. Skin corrosion and irritation. Serious eye damage and eye irritation. Respiratory. Specific target organ toxicity." />
+                        <Label Text="PICTOGRAM:" FontAttributes="Bold"/>
+                        <Label Text="An exclamation mark inside a red diamond border." />
+                    </StackLayout>
+
+
+
+                    <StackLayout  Grid.ColumnSpan="2" Grid.Row="16">
+                        <Label Text="In addition to the red diamond border pictograms, there is one symbol that has a black circular border but is still recognized by WHMIS 2015." FontAttributes="Italic"/>
+                        <Label Text="At this time the United Nations GHS does not recognize biohazardous materials under its own classification. However, Canada has chosen to keep the WHMIS 1988 classification and carry it forward in WHMIS 2015." FontAttributes="Italic"/>
+                    </StackLayout>
+
+                    <Image Source="{local:ImageResource Source={x:Static local:Strings.ImgWhmisPicBio}}" Grid.Column="0" Grid.Row="17"/>
+                    <Label Text="Biohazardous Infectious Materials" FontSize="Large" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontAttributes="Bold" Grid.Column="1" Grid.Row="17"/>
+                    <StackLayout Grid.ColumnSpan="2" Grid.Row="18">
+                        <Label Text="HAZARD:" FontAttributes="Bold"/>
+                        <Label Text="For organisms or toxins that can cause diseases in people or animals." />
+                        <Label Text="PICTOGRAM:" FontAttributes="Bold"/>
+                        <Label Text="A black circular symmetrical design inside a black circle border." />
+                    </StackLayout>
+
+                    <Image Source="{local:ImageResource Source={x:Static local:Strings.ImgWhmisPicEnviroToxic}}" Grid.Column="0" Grid.Row="19"/>
+                    <Label Text="Environmental Hazards Group" FontSize="Large" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontAttributes="Bold" Grid.Column="1" Grid.Row="19"/>
+                    <StackLayout Grid.ColumnSpan="2" Grid.Row="20">
+                        <Label Text="Also, although included in the GHS by the UN, Canada did not adopt the &quot;Environmental Hazards Group&quot; into WHMIS 2015. So, although you might see this aquatic toxicity pictogram on a product in your workplace, it is not part of WHMIS in Canada." />
+                    </StackLayout>
+
+
+                </Grid>
+            </StackLayout>
+        </local:TemplateWHMIS.Body>
+    </local:TemplateWHMIS>
+</ContentPage>

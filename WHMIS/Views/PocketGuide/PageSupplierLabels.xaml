@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:WHMIS"
+             x:Class="WHMIS.Views.PocketGuide.PageSupplierLabels">
+    <local:TemplateWHMIS PageTitle="Supplier Labels">
+        <local:TemplateWHMIS.Body>
+            <StackLayout  HorizontalOptions="Start" VerticalOptions="CenterAndExpand">
+
+                <Label Text="Supplier labels are the most common type of WHMIS 2015 labels. When you receive a hazardous product at your workplace, the supplier must provide a WHMIS 2015 supplier label."/>
+
+                <Label LineBreakMode="WordWrap">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="A supplier label contains"/>
+                            <Span Text=" 6 pieces of information:" FontAttributes="Bold"/>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+
+                <StackLayout Margin="15, 15, 0, 15">
+                    <Label Text="1. PRODUCT NAME"/>
+                    <Label Text="2. HAZARD PICTOGRAMS"/>
+                    <Label Text="3. SIGNAL WORD"/>
+                    <Label Text="4. HAZARD STATEMENTS"/>
+                    <Label Text="5. PRECAUTIONARY STATEMENTS"/>
+                    <Label Text="6. SUPPLIER INFORMATION"/>
+                </StackLayout>
+
+                <Label Text="A supplier label must be presented in both English and French."/>
+                <Label LineBreakMode="WordWrap">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="If you receive a hazardous product at your workplace from the supplier, and the supplier label is missing, damaged or inaccurate,"/>
+                            <Span Text=" do not use the product." FontAttributes="Bold"/>
+                            <Span Text=" Contact your supervisor and/or the supplier and make sure a proper supplier label is applied to the product before it is used."/>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+
+
+                <Label Text="Example WHMIS 2015 supplier label:" Margin="0, 15, 0, 0"/>
+                <Image Source="{local:ImageResource Source={x:Static local:Strings.ImgWhmisSupplierLable}}"/>
+            </StackLayout>
+        </local:TemplateWHMIS.Body>
+    </local:TemplateWHMIS>
+</ContentPage>

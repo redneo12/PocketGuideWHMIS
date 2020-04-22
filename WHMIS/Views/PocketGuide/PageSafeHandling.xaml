@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:WHMIS"
+             x:Class="WHMIS.Views.PocketGuide.PageSafeHandling">
+    <local:TemplateWHMIS PageTitle="Safe Handling">
+        <local:TemplateWHMIS.Body>
+            <StackLayout  HorizontalOptions="Start">
+                <Label Text="The following are some simple rules to keep in mind when handling hazardous products."/>
+
+                <Label LineBreakMode="WordWrap">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="Rule #1" FontAttributes="Bold"/>
+                            <Span Text=" Follow all policies and procedures as you've been trained."/>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+
+                <Label LineBreakMode="WordWrap">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="Rule #2" FontAttributes="Bold"/>
+                            <Span Text=" Be cautious and plan ahead. Pay close attention to what you're doing while you work."/>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+
+                <Label LineBreakMode="WordWrap">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="Rule #3" FontAttributes="Bold"/>
+                            <Span Text=" Always use the required PPE."/>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+
+                <Label LineBreakMode="WordWrap">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="Rule #4" FontAttributes="Bold"/>
+                            <Span Text=" Make sure all containers are properly labeled. Report any damaged containers or illegible labels to your supervisor right away."/>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+
+                <Label LineBreakMode="WordWrap">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="Rule #5" FontAttributes="Bold"/>
+                            <Span Text=" Read labels and SDSs before using hazardous products."/>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+
+                <Label LineBreakMode="WordWrap">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="Rule #6" FontAttributes="Bold"/>
+                            <Span Text=" Use all hazardous products solely for their intended purpose."/>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+
+                <Label LineBreakMode="WordWrap">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="Rule #7" FontAttributes="Bold"/>
+                            <Span Text=" Never eat or drink while handling any hazardous products."/>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+
+                <Label LineBreakMode="WordWrap">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="Rule #8" FontAttributes="Bold"/>
+                            <Span Text=" Store all hazardous products properly."/>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+
+                <Label LineBreakMode="WordWrap">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="Rule #9" FontAttributes="Bold"/>
+                            <Span Text=" After handling any hazardous products, wash thoroughly with soap and water."/>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+
+                <Label LineBreakMode="WordWrap">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="Rule #10" FontAttributes="Bold"/>
+                            <Span Text=" Learn about emergency procedures in your workplace."/>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+
+            </StackLayout>
+        </local:TemplateWHMIS.Body>
+    </local:TemplateWHMIS>
+</ContentPage>

@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:WHMIS"
+             x:Class="WHMIS.Views.PocketGuide.PageSDS">
+    <local:TemplateWHMIS PageTitle="Safety Data Sheets (SDSs)">
+        <local:TemplateWHMIS.Body>
+            <StackLayout  HorizontalOptions="Start">
+                <Label Text="A Safety Data Sheet is a form that provides detailed information about a hazardous product including what the product is, its hazards, how to protect oneself and what to do in an emergency."/>
+                <Label Text="SDSs are intended to supplement the information found on labels and must be readily available for workers to view at any time while on the job."/>
+                <Label Text="All workers should know where the SDSs are located at their workplace!" FontAttributes="Bold"/>
+
+                <Label LineBreakMode="WordWrap">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="An SDS has" />
+                            <Span Text=" 16 sections " FontAttributes="Bold"/>
+                            <Span Text="of information:" />
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+                <Label Text="The following is an outline of the types of information found on a typical SDS."/>
+
+                <StackLayout Padding="15, 15, 0, 0">
+                    <Label Text="1. IDENTIFICATION"/>
+                    <StackLayout Margin="15, 15, 15, 15">
+                        <Label Text="• Product identifier"/>
+                        <Label Text="• Other means of identification"/>
+                        <Label Text="• Recommended use"/>
+                        <Label Text="• Restrictions on use"/>
+                        <Label Text="• Canadian supplier identifier"/>
+                        <Label Text="• Emergency telephone number and any restrictions on the use of that number"/>
+                    </StackLayout>
+
+                    <Label Text="2. HAZARD IDENTIFICATION"/>
+                    <StackLayout Margin="15, 15, 15, 15">
+                        <Label Text="• Hazard classification of substance or mixture or a description of the identified hazard for Physical or Health Hazards Not Otherwise Classified"/>
+                        <Label Text="Label elements:"/>
+                        <StackLayout Margin="15, 15, 15, 15">
+                            <Label Text="• Symbol (image) or the name of the symbol"/>
+                            <Label Text="• Signal word"/>
+                            <Label Text="• Hazard statement(s)"/>
+                            <Label Text="• Precautionary statement(s)"/>
+                            <Label Text="• Other hazards which do not result in classification"/>
+                        </StackLayout>
+                    </StackLayout>
+
+                    <Label Text="3. COMPOSITION/INFORMATION ON INGREDIENTS"/>
+                    <StackLayout Margin="15, 15, 15, 15">
+                        <Label Text="• When a hazardous product is a material or substance:"/>
+                        <StackLayout Margin="15, 15, 15, 15">
+                            <Label Text="• Chemical name"/>
+                            <Label Text="• Common name and synonyms"/>
+                            <Label Text="• Chemical Abstract Service (CAS) registry number and any unique identifiers"/>
+                            <Label Text="• Chemical name of impurities, stabilizing solvents and/or additives"/>
+                        </StackLayout>
+
+                        <Label Text="• For each material or substance in a mixture that is classified in a health hazard class:"/>
+                        <StackLayout Margin="15, 15, 15, 15">
+                            <Label Text="• Chemical name"/>
+                            <Label Text="• Common name and synonyms"/>
+                            <Label Text="• CAS registry number and any unique identifiers"/>
+                            <Label Text="• Concentration"/>
+                        </StackLayout>
+                        <Label Text="NOTE: Confidential business information rules can apply"/>
+                    </StackLayout>
+
+                    <Label Text="4. FIRST-AID MEASURES"/>
+                    <StackLayout Margin="15, 15, 15, 15">
+                        <Label Text="• First-aid measures by route of exposure:"/>
+                        <StackLayout Margin="15, 15, 15, 15">
+                            <Label Text="• Inhalation"/>
+                            <Label Text="• Skin contact"/>
+                            <Label Text="• Eye contact"/>
+                            <Label Text="• Ingestion"/>
+                        </StackLayout>
+                        <Label Text="• Most important symptoms and effects (acute or delayed)"/>
+                        <Label Text="• Immediate medical attention and special treatment, if necessary"/>
+                    </StackLayout>
+
+                    <Label Text="5. FIRE-FIGHTING MEASURES"/>
+                    <StackLayout Margin="15, 15, 15, 15">
+                        <Label Text="• Suitable extinguishing media"/>
+                        <Label Text="• Unsuitable extinguishing media"/>
+                        <Label Text="• Specific hazards arising from the hazardous product (e.g., hazardous combustion products)"/>
+                        <Label Text="• Special protective equipment and precautions for fire-fighters"/>
+                    </StackLayout>
+
+                    <Label Text="6. ACCIDENTAL RELEASE"/>
+                    <StackLayout Margin="15, 15, 15, 15">
+                        <Label Text="• Personal precautions, protective equipment and emergency procedures"/>
+                        <Label Text="• Methods and materials for containment and cleaning up"/>
+                    </StackLayout>
+
+                    <Label Text="7. HANDLING AND STORAGE"/>
+                    <StackLayout Margin="15, 15, 15, 15">
+                        <Label Text="• Precautions for safe handling"/>
+                        <Label Text="• Conditions for safe storage (including incompatible materials)"/>
+                    </StackLayout>
+
+                    <Label Text="8. EXPOSURE CONTROLS / PERSONAL PROTECTION"/>
+                    <StackLayout Margin="15, 15, 15, 15">
+                        <Label Text="• Control parameters, including occupational exposure guidelines or biological exposure limits and the source of those values"/>
+                        <Label Text="• Appropriate engineering controls"/>
+                        <Label Text="• Individual protection measures (e.g. personal protective equipment)"/>
+                    </StackLayout>
+
+                    <Label Text="9. PHYSICAL AND CHEMICAL PROPERTIES"/>
+                    <StackLayout Margin="15, 15, 15, 15">
+                        <Label Text="• Appearance (physical state, colour, etc.)"/>
+                        <Label Text="• Odour"/>
+                        <Label Text="• Odour threshold"/>
+                        <Label Text="• pH"/>
+                        <Label Text="• Melting point/Freezing point"/>
+                        <Label Text="• Initial boiling point/boiling range"/>
+                        <Label Text="• Flash point"/>
+                        <Label Text="• Evaporation rate"/>
+                        <Label Text="• Flammability (solid; gas)"/>
+                        <Label Text="• Lower flammable/explosive limit"/>
+                        <Label Text="• Upper flammable/explosive limit"/>
+                        <Label Text="• Vapour pressure"/>
+                        <Label Text="• Vapour density"/>
+                        <Label Text="• Relative density"/>
+                        <Label Text="• Solubility"/>
+                        <Label Text="• Partition coefficient - n-octanol/water"/>
+                        <Label Text="• Auto-ignition temperature"/>
+                        <Label Text="• Decomposition temperature"/>
+                        <Label Text="• Viscosity"/>
+                    </StackLayout>
+
+                    <Label Text="10. STABILITY AND REACTIVITY"/>
+                    <StackLayout Margin="15, 15, 15, 15">
+                        <Label Text="• Reactivity"/>
+                        <Label Text="• Chemical stability"/>
+                        <Label Text="• Possibility of hazardous reactions"/>
+                        <Label Text="• Conditions to avoid (e.g., static discharge, shock, or vibration)"/>
+                        <Label Text="• Incompatible materials"/>
+                        <Label Text="• Hazardous decomposition products"/>
+                    </StackLayout>
+
+                    <Label Text="11. TOXICOLOGICAL INFORMATION"/>
+                    <StackLayout Margin="15, 15, 15, 15">
+                        <Label Text="• Concise but complete description of the various toxic health effects and the data used to identify those effects, including:"/>
+                        <StackLayout Margin="15, 15, 15, 15">
+                            <Label Text="• Information on the likely routes of exposure (inhalation, ingestion, skin and eye contact)"/>
+                            <Label Text="• Symptoms related to the physical, chemical and toxicological characteristics"/>
+                            <Label Text="• Delayed and immediate effects, and chronic effects from short-term and long-term exposure"/>
+                            <Label Text="• Numerical measures of toxicity"/>
+                        </StackLayout>
+                    </StackLayout>
+
+                    <Label Text="12. ECOLOGICAL INFORMATION"/>
+                    <StackLayout Margin="15, 15, 15, 15">
+                        <Label Text="• Ecotoxicity"/>
+                        <Label Text="• Persistence and degradability"/>
+                        <Label Text="• Bioaccumulative potential"/>
+                        <Label Text="• Mobility in soil"/>
+                        <Label Text="• Other adverse effects"/>
+                    </StackLayout>
+
+                    <Label Text="13. DISPOSAL CONSIDERATIONS"/>
+                    <StackLayout Margin="15, 15, 15, 15">
+                        <Label Text="• Information on safe handling for disposal and methods of disposal, including any contaminated packaging"/>
+                    </StackLayout>
+
+                    <Label Text="14. TRANSPORT INFORMATION"/>
+                    <StackLayout Margin="15, 15, 15, 15">
+                        <Label Text="• UN number"/>
+                        <Label Text="• UN proper shipping name"/>
+                        <Label Text="• Transport hazard class(es)"/>
+                        <Label Text="• Packing group"/>
+                        <Label Text="• Environmental hazards"/>
+                        <Label Text="• Transport in bulk, if applicable"/>
+                        <Label Text="• Special precautions"/>
+                    </StackLayout>
+
+                    <Label Text="15. REGULATORY INFORMATION"/>
+                    <StackLayout Margin="15, 15, 15, 15">
+                        <Label Text="• Safety, health and environmental regulations specific to the product"/>
+                    </StackLayout>
+
+                    <Label Text="16. OTHER INFORMATION"/>
+                    <StackLayout Margin="15, 15, 15, 15">
+                        <Label Text="• Date of the latest revision of the SDS"/>
+                    </StackLayout>
+                </StackLayout>
+                <Button Text="View Example SDS" Clicked="Open_SDS"/>
+
+            </StackLayout>
+        </local:TemplateWHMIS.Body>
+    </local:TemplateWHMIS>
+</ContentPage>

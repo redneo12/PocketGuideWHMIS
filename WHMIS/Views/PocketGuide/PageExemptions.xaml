@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:WHMIS"
+             x:Class="WHMIS.Views.PocketGuide.PageExemptions">
+    <local:TemplateWHMIS PageTitle="Exemptions">
+        <local:TemplateWHMIS.Body>
+            <StackLayout  HorizontalOptions="Start">
+                <Label Text="Some products, such as tobacco and wood, are exempt from WHMIS."/>
+                <Label Text="Other products that are not considered to be a hazard during &quot;normal use&quot; are also exempt."/>
+                <Label Text="For example, many plastics like those used for drinking containers, can produce fatally dangerous fumes when they are burning. However, since a drinking container is not likely to be burning during normal use, it is exempt from WHMIS."/>
+                <Image Source="{local:ImageResource Source={x:Static local:Strings.ImgWhmisPicExemptions}}" Margin="15"/>
+
+                <Label Text="Additionally, WHMIS does not apply to hazardous products that are being transported under the TDG (Transportation of Dangerous Goods) Regulations. WHMIS only applies in this scenario after the products are delivered to a workplace."/>
+                <Label Text="Some products, such as explosives and radioactive materials, are partially exempt from WHMIS because they are already covered under other regulations."/>
+                <Image Source="{local:ImageResource Source={x:Static local:Strings.ImgWhmisPicExemptions2}}" Margin="15"/>
+            </StackLayout>
+        </local:TemplateWHMIS.Body>
+    </local:TemplateWHMIS>
+</ContentPage>

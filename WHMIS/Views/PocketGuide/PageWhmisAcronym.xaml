@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:WHMIS"
+             x:Class="WHMIS.Views.PocketGuide.PageWhmisAcronym">
+    <local:TemplateWHMIS PageTitle="WHMIS - Acronyms">
+        <local:TemplateWHMIS.Body>
+            <Label LineBreakMode="WordWrap">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="What does WHMIS stand for?" />
+                        <Span Text="{x:Static x:Environment.NewLine}" />
+                        <Span Text="{x:Static x:Environment.NewLine}" />
+
+                        <Span Text="W" FontAttributes="Bold" FontSize="Large"/>
+                        <Span Text="orkplace" FontSize="Large"/>
+                        <Span Text="{x:Static x:Environment.NewLine}" />
+
+                        <Span Text="H" FontAttributes="Bold" FontSize="Large"/>
+                        <Span Text="azardous" FontSize="Large"/>
+                        <Span Text="{x:Static x:Environment.NewLine}" />
+
+                        <Span Text="M" FontAttributes="Bold" FontSize="Large"/>
+                        <Span Text="aterials" FontSize="Large"/>
+                        <Span Text="{x:Static x:Environment.NewLine}" />
+
+                        <Span Text="I" FontAttributes="Bold" FontSize="Large"/>
+                        <Span Text="nformation" FontSize="Large"/>
+                        <Span Text="{x:Static x:Environment.NewLine}" />
+
+                        <Span Text="S" FontAttributes="Bold" FontSize="Large"/>
+                        <Span Text="ystem" FontSize="Large"/>
+                        <Span Text="{x:Static x:Environment.NewLine}" />
+                        <Span Text="{x:Static x:Environment.NewLine}" />
+
+
+                        <Span Text="What does GHS stand for?" />
+                        <Span Text="{x:Static x:Environment.NewLine}" />
+                        <Span Text="{x:Static x:Environment.NewLine}" />
+
+                        <Span Text="G" FontAttributes="Bold" FontSize="Large"/>
+                        <Span Text="lobally" FontSize="Large"/>
+                        <Span Text="{x:Static x:Environment.NewLine}" />
+
+                        <Span Text="H" FontAttributes="Bold" FontSize="Large"/>
+                        <Span Text="armonized" FontSize="Large"/>
+                        <Span Text="{x:Static x:Environment.NewLine}" />
+
+                        <Span Text="S" FontAttributes="Bold" FontSize="Large"/>
+                        <Span Text="ystem" FontSize="Large"/>
+                        <Span Text="{x:Static x:Environment.NewLine}" />
+
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+        </local:TemplateWHMIS.Body>
+    </local:TemplateWHMIS>
+</ContentPage>

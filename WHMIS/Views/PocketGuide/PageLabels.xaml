@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:local="clr-namespace:WHMIS"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="WHMIS.Views.PocketGuide.PageLabels">
+    <local:TemplateWHMIS PageTitle="Labels">
+        <local:TemplateWHMIS.Body>
+            <StackLayout  HorizontalOptions="Start">
+
+                <Label Text="Most hazardous products at the workplace require a WHMIS label."/>
+
+                <Label Text="There are 2 types of WHMIS labels:"/>
+                <Label Text="• Supplier Labels and"/>
+                <Label Text="• Workplace Labels"/>
+
+                <Label Text="Supplier labels must be written in both English &amp; French. However, workplace labels can be written in English, French or the most spoken language at the workplace."/>
+                <Label Text="All labels must all be easy to read, clear, concise and prominently displayed on the product."/>
+            </StackLayout>
+        </local:TemplateWHMIS.Body>
+    </local:TemplateWHMIS>
+</ContentPage>

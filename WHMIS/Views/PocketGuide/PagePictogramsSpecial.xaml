@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:WHMIS"
+             x:Class="WHMIS.Views.PocketGuide.PagePictogramsSpecial">
+    <local:TemplateWHMIS PageTitle="Pictograms">
+        <local:TemplateWHMIS.Body>
+            <StackLayout  HorizontalOptions="Start">
+                <Label Text="In addition to the red diamon border pictograms, there is one symbol that has a black circle border but is stil recgnized by WHMIS 2015."/>
+                <Label Text="At this time the United Nations GHS does not reconize biohazaedous materials under its own classification. However, Canada has chosen o keep the WHMIS 1988 classification and carry it forward in WHMIS 2015."/>
+
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="100" />
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <Image Source="{local:ImageResource Source={x:Static local:Strings.ImgWhmisPicBio}}" Grid.Column="0" Grid.Row="0" WidthRequest="50" HeightRequest="50"/>
+                    <StackLayout Grid.Column="1" Grid.Row="0">
+                        <Label Text="Biohazardous Infectious Materials" FontAttributes="Bold"/>
+                        <Label Text="HAZARD:" FontAttributes="Bold"/>
+                        <Label Text="For organisms or toxins that can cause diseases in people or animals."/>
+                        <Label Text="PICTOGRAM:" FontAttributes="Bold"/>
+                        <Label Text="A black circular symmetrical design inside a black circule border."/>
+                    </StackLayout>
+                </Grid>
+
+
+                <Label Text="{x:Static x:Environment.NewLine}" />
+                <Label Text="Also, although included in the GHS by the UN, Canada did not adopt the &quot;Environmental Hazards Group&quot; into WHMIS 2015. So, although you might see this aquatic toxicity pictogram on a product in your workplace, it is not part of WHMIS in Canada."/>
+                <Image Source="{local:ImageResource Source={x:Static local:Strings.ImgWhmisPicEnviroToxic}}"  WidthRequest="100" HeightRequest="100"/>
+            </StackLayout>
+        </local:TemplateWHMIS.Body>
+    </local:TemplateWHMIS>
+</ContentPage>

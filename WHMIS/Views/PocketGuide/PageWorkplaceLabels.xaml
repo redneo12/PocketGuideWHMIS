@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:WHMIS"
+             x:Class="WHMIS.Views.PocketGuide.PageWorkplaceLabels">
+    <local:TemplateWHMIS PageTitle="Workplace Labels">
+        <local:TemplateWHMIS.Body>
+            <StackLayout  HorizontalOptions="Start">
+
+                <Label Text="If a hazardous product is always used in its original container with a supplier label, then there is no need for any additional labels."/>
+
+                <Label Text="In some cases, however, you may want to pour or move the contents into a different container. A workplace label is then required."/>
+                <Label Text="A workplace label should also be used if the original supplier label becomes illegible or damaged."/>
+
+                <Image Source="{local:ImageResource Source={x:Static local:Strings.ImgWhmisPicBarle}}" Margin="0, 15, 0, 15"/>
+
+                <Label Text="A workplace label is designed to be made at the workplace and contains less information than a supplier label."/>
+                <Label Text="A workplace label can be written in English or French or the most common language used at the workplace."/>
+                <Label Text="It can be in any colour, as long as it is easily visible."/>
+                <Label LineBreakMode="WordWrap">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="A workplace label contains" />
+                            <Span Text=" 3 pieces of information:" FontAttributes="Bold"/>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+                <StackLayout Margin="15, 15, 15, 15">
+                    <Label Text="1. The product name"/>
+                    <Label Text="2. Safe handling information"/>
+                    <Label Text="3. A reference to the SDS"/>
+                </StackLayout>
+
+                <Image Source="{local:ImageResource Source={x:Static local:Strings.ImgWhmisWorplaceLable}}"/>
+            </StackLayout>
+        </local:TemplateWHMIS.Body>
+    </local:TemplateWHMIS>
+</ContentPage>

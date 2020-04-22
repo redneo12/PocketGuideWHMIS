@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:WHMIS"
+             x:Class="WHMIS.Views.PocketGuide.PageHazardGroups">
+    <local:TemplateWHMIS PageTitle="Hazard Groups &amp; Pictograms">
+        <local:TemplateWHMIS.Body>
+            <StackLayout  HorizontalOptions="Start">
+                <Label Text="WHMIS 2015 has 2 Hazard Groups:" Style="{StaticResource Header}"/>
+                <StackLayout>
+                    <Label LineBreakMode="WordWrap">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span Text="Health Hazards" FontAttributes="Bold"/>
+                                <Span Text=" - classified based on the ability of a hazardous product to produce health effects such as respiratory issues, carcinogenicity, skin or eye irritation, or any other potential health issues." />
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+                    <Label LineBreakMode="WordWrap">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span Text="Physical Hazards" FontAttributes="Bold"/>
+                                <Span Text=" - classified by the chemical or physical properties of a hazardous product such as gases under pressure, flammable substances and corrosives." />
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+                </StackLayout>
+
+                <Label Text="What are Pictograms?" Style="{StaticResource Header}"/>
+                <StackLayout>
+                    <Label LineBreakMode="WordWrap">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span Text="Pictograms" FontAttributes="Bold"/>
+                                <Span Text=" are images or symbols that indicate what type of hazard is present to users of hazardous products. Pictograms allow a worker to see, at a quick glance, if a product is flammable or might be a health hazard." />
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+                    <Label Text="Pictograms have a symbol that represents the potential hazard (i.e. fire, corrosive, health hazard, etc.) surrounded by a red diamond border. Together, the symbol and the border are referred to as a pictogram. Pictograms are assigned to specific hazard classes or categories."/>
+                </StackLayout>
+
+
+            </StackLayout>
+        </local:TemplateWHMIS.Body>
+    </local:TemplateWHMIS>
+</ContentPage>

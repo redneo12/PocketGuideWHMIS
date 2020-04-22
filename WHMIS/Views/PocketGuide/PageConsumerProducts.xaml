@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:WHMIS"
+             x:Class="WHMIS.Views.PocketGuide.PageConsumerProducts">
+    <local:TemplateWHMIS PageTitle="Consumer Based Products">
+        <local:TemplateWHMIS.Body>
+            <StackLayout  HorizontalOptions="Start">
+                <Label Text="Most products purchased from retail stores do not have WHMIS supplier labels. This is because they are considered to be consumer based products and are intended for home use. These products are partially exempt from WHMIS."/>
+                <Label Text="If you buy a consumer product from a retail store and use it at work, you should always follow any safety precautions found on the product, download or locate the SDS from the manufacturer's website and tell your supervisor. It is important to obtain the SDS as it contains essential information on how to protect your health."/>
+                <Label Text="If you transfer a consumer based product to a new container at the workplace, WHMIS fully applies and you will need to apply a WHMIS workplace label."/>
+
+                <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                    <Image  Source="{local:ImageResource Source={x:Static local:Strings.ImgWhmisPicConsumer}}" Aspect="AspectFit" />
+                </StackLayout>
+                
+
+            </StackLayout>
+        </local:TemplateWHMIS.Body>
+    </local:TemplateWHMIS>
+</ContentPage>

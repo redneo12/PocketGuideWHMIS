@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="WHMIS.Views.PocketGuide.PageWhmisTraining"
+             xmlns:local="clr-namespace:WHMIS">
+    <local:TemplateWHMIS PageTitle="WHMIS Training">
+        <local:TemplateWHMIS.Body>
+            <StackLayout  HorizontalOptions="Start">
+                <Label Text="WHMIS training helps workers to:"/>
+                <StackLayout Padding="15, 15, 15, 15" BackgroundColor="{Binding Source={x:Static local:Strings.ColYowGrey}}">
+                    <Label Text="• Understand what WHMIS is and how it affects them"/>
+                    <Label Text="• Identify hazardous products at their workplace"/>
+                    <Label Text="• Understand information found on WHMIS labels"/>
+                    <Label Text="• Understand where to locate Safety Data Sheets (SDSs) and how to pinpoint important information"/>
+                    <Label Text="• Understand procedures for safe use, handling, storage and disposal of hazardous products during normal use and for emergencies"/>
+                </StackLayout>
+
+                <Label LineBreakMode="WordWrap">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="As a result, workers should be better informed on how to work safely with hazardous products at the workplace. Additionally," />
+                            <Span Text=" regular" FontAttributes="Bold"/>
+                            <Span Text=" WHMIS training keeps companies in compliance with the regulations. Remember, WHMIS is the law!"/>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+
+                <Label Text="If any worker feels their WHMIS knowledge needs improvement, they should talk to their supervisor."/>
+
+            </StackLayout>
+        </local:TemplateWHMIS.Body>
+    </local:TemplateWHMIS>
+</ContentPage>
