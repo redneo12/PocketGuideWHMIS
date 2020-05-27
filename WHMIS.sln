@@ -52,11 +52,13 @@ Global
 		{6213378C-DE42-4F51-BB91-02D2C852D875}.Debug|Any CPU.ActiveCfg = Debug|iPhone
 		{6213378C-DE42-4F51-BB91-02D2C852D875}.Debug|iPhone.ActiveCfg = Debug|iPhone
 		{6213378C-DE42-4F51-BB91-02D2C852D875}.Debug|iPhone.Build.0 = Debug|iPhone
+		{6213378C-DE42-4F51-BB91-02D2C852D875}.Debug|iPhone.Deploy.0 = Debug|iPhone
 		{6213378C-DE42-4F51-BB91-02D2C852D875}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
 		{6213378C-DE42-4F51-BB91-02D2C852D875}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
 		{6213378C-DE42-4F51-BB91-02D2C852D875}.Release|Any CPU.ActiveCfg = Release|iPhone
 		{6213378C-DE42-4F51-BB91-02D2C852D875}.Release|iPhone.ActiveCfg = Release|iPhone
 		{6213378C-DE42-4F51-BB91-02D2C852D875}.Release|iPhone.Build.0 = Release|iPhone
+		{6213378C-DE42-4F51-BB91-02D2C852D875}.Release|iPhone.Deploy.0 = Release|iPhone
 		{6213378C-DE42-4F51-BB91-02D2C852D875}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
 		{6213378C-DE42-4F51-BB91-02D2C852D875}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
 	EndGlobalSection

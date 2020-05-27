@@ -14,6 +14,7 @@
     <MtouchHttpClientHandler>NSUrlSessionHandler</MtouchHttpClientHandler>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <ProvisioningType>manual</ProvisioningType>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
     <DebugSymbols>true</DebugSymbols>
@@ -27,7 +28,7 @@
     <MtouchArch>x86_64</MtouchArch>
     <MtouchLink>None</MtouchLink>
     <MtouchDebug>true</MtouchDebug>
-    <CodesignKey>iPhone Developer: Lucas Robert (R2DC548982)</CodesignKey>
+    <CodesignKey>Apple Development: Lucas Robert (R2DC548982)</CodesignKey>
     <CodesignProvision>VS: WildCard Development</CodesignProvision>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
@@ -58,7 +59,7 @@
     <MtouchArch>ARM64</MtouchArch>
     <CodesignEntitlements>
     </CodesignEntitlements>
-    <CodesignKey>iPhone Developer: Lucas Robert (R2DC548982)</CodesignKey>
+    <CodesignKey>Apple Development: Lucas Robert (R2DC548982)</CodesignKey>
     <MtouchDebug>true</MtouchDebug>
     <CodesignProvision>VS: WildCard Development</CodesignProvision>
     <CodesignExtraArgs />
@@ -75,8 +76,8 @@
     </CodesignEntitlements>
     <MtouchArch>ARM64</MtouchArch>
     <ConsolePause>false</ConsolePause>
-    <CodesignKey>iPhone Developer: Lucas Robert (R2DC548982)</CodesignKey>
-    <CodesignProvision>VS: WildCard Development</CodesignProvision>
+    <CodesignKey>iPhone Distribution</CodesignKey>
+    <CodesignProvision>YOW WHMIS</CodesignProvision>
     <CodesignExtraArgs />
     <CodesignResourceRules />
     <MtouchExtraArgs>
@@ -209,7 +210,7 @@
   </Target>
   <ProjectExtensions>
     <VisualStudio>
-      <UserProperties XamarinHotReloadMonoInterpreterErrorInfoBarPocketGuideiOSHideInfoBar="True" XamarinHotReloadWrongLinkerErrorInfoBarPocketGuideiOSHideInfoBar="True" XamarinHotReloadWrongLinkerErrorInfoBarWHMISiOSHideInfoBar="True" XamarinHotReloadMonoInterpreterErrorInfoBarWHMISiOSHideInfoBar="True" />
+      <UserProperties XamarinHotReloadMonoInterpreterErrorInfoBarWHMISiOSHideInfoBar="True" XamarinHotReloadWrongLinkerErrorInfoBarWHMISiOSHideInfoBar="True" XamarinHotReloadWrongLinkerErrorInfoBarPocketGuideiOSHideInfoBar="True" XamarinHotReloadMonoInterpreterErrorInfoBarPocketGuideiOSHideInfoBar="True" />
     </VisualStudio>
   </ProjectExtensions>
 </Project>
