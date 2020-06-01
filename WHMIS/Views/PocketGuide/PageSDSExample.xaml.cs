@@ -6,7 +6,7 @@ using System.Linq;
 using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
-
+using WebKit;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -23,7 +23,7 @@ namespace WHMIS.Views.PocketGuide
         public PageSDSExample()
         {
             //InitializeComponent();
-
+            //WKWebView webView = new WKWebView(View.Frame, new WKWebViewConfiguration());
             var source = new HtmlWebViewSource();
             var assembly = IntrospectionExtensions.GetTypeInfo(typeof(WHMIS.Views.PocketGuide.PageSDSExample)).Assembly;
             Stream stream = assembly.GetManifestResourceStream(Strings.ImgWhmisHTMLSDS);

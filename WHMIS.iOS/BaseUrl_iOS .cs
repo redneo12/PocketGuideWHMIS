@@ -5,9 +5,8 @@ using System.Text;
 using WHMIS.iOS;
 using Foundation;
 using WHMIS.ViewModels.Base;
-using UIKit;
 using Xamarin.Forms;
-
+using WebKit;
 [assembly: Dependency(typeof(BaseUrl_iOS))]
 namespace WHMIS.iOS
 {
