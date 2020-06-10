@@ -6,8 +6,6 @@
 	<string>WHMIS.iOS</string>
 	<key>CFBundleIdentifier</key>
 	<string>com.yowcanada.whmisPG</string>
-	<key>CFBundleVersion</key>
-	<string>5.0</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>MinimumOSVersion</key>
@@ -44,9 +42,13 @@
 	<string>Assets.xcassets/AppIcon.appiconset</string>
 	<key>UIStatusBarHidden</key>
 	<true/>
+  <key>UIUserInterfaceStyle</key>
+  <string>Light</string>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
 	<key>CFBundleShortVersionString</key>
+	<string>6.0</string>
+	<key>CFBundleVersion</key>
 	<string>1</string>
 </dict>
 </plist>

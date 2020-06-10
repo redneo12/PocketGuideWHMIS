@@ -125,7 +125,7 @@
                     </StackLayout>
 
                     <Image Source="{local:ImageResource Source={x:Static local:Strings.ImgWhmisPicBio}}" Grid.Column="0" Grid.Row="17"/>
-                    <Label Text="Biohazardous Infectious Materials" FontSize="Large" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontAttributes="Bold" Grid.Column="1" Grid.Row="17"/>
+                    <Label Text="Biohazardous Infectious Materials" FontSize="Medium" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontAttributes="Bold" Grid.Column="1" Grid.Row="17"/>
                     <StackLayout Grid.ColumnSpan="2" Grid.Row="18">
                         <Label Text="HAZARD:" FontAttributes="Bold"/>
                         <Label Text="For organisms or toxins that can cause diseases in people or animals." />

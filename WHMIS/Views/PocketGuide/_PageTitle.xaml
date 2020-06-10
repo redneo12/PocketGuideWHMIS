@@ -38,7 +38,7 @@
                 <StackLayout  HorizontalOptions="FillAndExpand" VerticalOptions="End" Padding="5">
                     <Image Source="{local:ImageResource Source={x:Static local:Strings.LogoYowPath}}" Aspect="AspectFit" WidthRequest="2000" HorizontalOptions="FillAndExpand" VerticalOptions="End"/>
                     <Label Text="Safety Compliance Made Easy!" Style="{StaticResource Title}" FontSize="Medium"  TextColor="Gray" HorizontalOptions="FillAndExpand" VerticalOptions="End"/>
-                    <Label Text="www.yowcanada.com" Style="{StaticResource Title}" FontSize="Small" TextColor="{Binding Source={x:Static local:Strings.ColYowBlue}}">
+                    <Label Text="www.yowcanada.com" Style="{StaticResource YOWCanadaLink}">
                         <Label.GestureRecognizers>
                             <TapGestureRecognizer Command="{Binding OpenUrl}" CommandParameter="https://yowcanada.com"/>
                         </Label.GestureRecognizers>
