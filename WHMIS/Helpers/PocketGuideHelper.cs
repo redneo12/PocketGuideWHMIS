@@ -127,7 +127,7 @@ namespace WHMIS.Helpers
             Index.Add(new WHMISItem
             {
                 Id = 19,
-                Title = "Safe Handeling",
+                Title = "Safe Handling",
                 TargetType = typeof(WHMIS.Views.PocketGuide.PageSafeHandling)
             });
             #endregion

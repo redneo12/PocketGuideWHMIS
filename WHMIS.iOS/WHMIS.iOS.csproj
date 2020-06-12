@@ -81,9 +81,9 @@
     <CodesignProvision>VS: WildCard Development</CodesignProvision>
     <CodesignExtraArgs />
     <CodesignResourceRules />
-    <MtouchExtraArgs>
-    </MtouchExtraArgs>
+    <MtouchExtraArgs>--optimize=experimental-xforms-product-type</MtouchExtraArgs>
     <MtouchNoSymbolStrip>true</MtouchNoSymbolStrip>
+    <MtouchEnableSGenConc>false</MtouchEnableSGenConc>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(RunConfiguration)' == 'Default' ">
     <AppExtensionDebugBundleId />
@@ -211,7 +211,7 @@
   </Target>
   <ProjectExtensions>
     <VisualStudio>
-      <UserProperties XamarinHotReloadMonoInterpreterErrorInfoBarPocketGuideiOSHideInfoBar="True" XamarinHotReloadWrongLinkerErrorInfoBarPocketGuideiOSHideInfoBar="True" XamarinHotReloadWrongLinkerErrorInfoBarWHMISiOSHideInfoBar="True" XamarinHotReloadMonoInterpreterErrorInfoBarWHMISiOSHideInfoBar="True" />
+      <UserProperties XamarinHotReloadMonoInterpreterErrorInfoBarWHMISiOSHideInfoBar="True" XamarinHotReloadWrongLinkerErrorInfoBarWHMISiOSHideInfoBar="True" XamarinHotReloadWrongLinkerErrorInfoBarPocketGuideiOSHideInfoBar="True" XamarinHotReloadMonoInterpreterErrorInfoBarPocketGuideiOSHideInfoBar="True" />
     </VisualStudio>
   </ProjectExtensions>
 </Project>
