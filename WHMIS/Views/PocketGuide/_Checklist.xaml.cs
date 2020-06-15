@@ -56,7 +56,8 @@ namespace WHMIS.Views.PocketGuide
             Entry entry = sender as Entry;
 
             ChecklistItem item = (ChecklistItem)entry.BindingContext;
-
+            item.Notes = entry.Text;
+            Console.WriteLine("item.Notes" + item.Notes);
             checklistVM.UpdateNotes(item);
         }
 
@@ -71,13 +72,13 @@ namespace WHMIS.Views.PocketGuide
 
                 ChecklistItem data = (ChecklistItem)senderBox.BindingContext;
 
+                data.IsChecked = e.Value;
                 if (!senderBox.IsChecked)
                 {
                     //box has been unchecked, deleted entry
                     data.Date = new DateTime(0001, 01, 01);
                     data.Notes = "";
                 }
-                data.IsChecked = e.Value;
 
                 checklistVM.UpdateNotes(data);
 

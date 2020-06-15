@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="WHMIS.Views.PocketGuide.Checklist"
              xmlns:local="clr-namespace:WHMIS"
+             xmlns:local2="clr-namespace:WHMIS.Views.PocketGuide"
              xmlns:models="clr-namespace:WHMIS.Models"
              xmlns:viewmodels="clr-namespace:WHMIS.ViewModels">
     <ContentPage.ToolbarItems>
@@ -22,8 +23,6 @@
                         <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
                             <StackLayout Orientation="Horizontal" Padding="5" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
                                 <CheckBox x:Name="checkBox" CheckedChanged="OnCheckChanged"  IsChecked="{Binding IsChecked}" VerticalOptions="CenterAndExpand" HorizontalOptions="Start"/>
-
-
                                 <Label Text="{Binding Item}" VerticalOptions="CenterAndExpand"/>
                             </StackLayout>
                             <StackLayout  Orientation="Horizontal" Padding="5"  HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
@@ -50,7 +49,7 @@
                                     </Label.Triggers>
                                 </Label>
 
-                                <Entry x:Name="noteField" Text="{Binding Notes}" Placeholder="Notes..." MaxLength="250"  VerticalOptions="CenterAndExpand" HorizontalOptions="FillAndExpand" Completed="OnEntryCompleted" Unfocused="OnEntryCompleted" BackgroundColor="{Binding Source={x:Static local:Strings.ColYowLGrey}}">
+                                <Entry x:Name="noteField" Text="{Binding Notes}" Placeholder="Notes..." MaxLength="35"  VerticalOptions="CenterAndExpand" HorizontalOptions="FillAndExpand" Completed="OnEntryCompleted" Unfocused="OnEntryCompleted" BackgroundColor="{Binding Source={x:Static local:Strings.ColYowLGrey}}">
                                     <Entry.Triggers>
                                         <DataTrigger TargetType="Entry"
                                                 Binding="{Binding Source={x:Reference checkBox}, Path=IsChecked}" Value="True">
