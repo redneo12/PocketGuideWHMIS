@@ -67,9 +67,6 @@ namespace WHMIS.Views.PocketGuide
 
             try
             {
-
-
-
                 ChecklistItem data = (ChecklistItem)senderBox.BindingContext;
 
                 data.IsChecked = e.Value;
@@ -77,7 +74,7 @@ namespace WHMIS.Views.PocketGuide
                 {
                     //box has been unchecked, deleted entry
                     data.Date = new DateTime(0001, 01, 01);
-                    data.Notes = "";
+                    //data.Notes = "";
                 }
 
                 checklistVM.UpdateNotes(data);

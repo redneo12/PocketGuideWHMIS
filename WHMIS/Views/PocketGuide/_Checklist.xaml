@@ -15,7 +15,7 @@
         </ToolbarItem>
     </ContentPage.ToolbarItems>
     <StackLayout Spacing="0">
-        <ListView x:Name="checklistView" ItemsSource="{Binding Source=models.ChecklistItem}" RowHeight="100" HasUnevenRows="True" SelectionMode="None" HorizontalOptions="CenterAndExpand" Margin="10,0,10,0" ItemTapped="Handle_ItemTapped">
+        <ListView x:Name="checklistView" ItemsSource="{Binding Source=models.ChecklistItem}" RowHeight="130" HasUnevenRows="True" SelectionMode="None" HorizontalOptions="CenterAndExpand" Margin="10,0,10,0" ItemTapped="Handle_ItemTapped">
 
             <ListView.ItemTemplate>
                 <DataTemplate>
@@ -25,7 +25,7 @@
                                 <CheckBox x:Name="checkBox" CheckedChanged="OnCheckChanged"  IsChecked="{Binding IsChecked}" VerticalOptions="CenterAndExpand" HorizontalOptions="Start"/>
                                 <Label Text="{Binding Item}" VerticalOptions="CenterAndExpand"/>
                             </StackLayout>
-                            <StackLayout  Orientation="Horizontal" Padding="5"  HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                            <StackLayout  Orientation="Vertical" Padding="10"  HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" >
                                 <StackLayout.Triggers>
                                     <DataTrigger TargetType="StackLayout"
                                                 Binding="{Binding Source={x:Reference checkBox}, Path=IsChecked}" Value="True">
@@ -36,7 +36,7 @@
                                         <Setter Property="IsVisible"  Value="False"/>
                                     </DataTrigger>
                                 </StackLayout.Triggers>
-                                <Label x:Name="dateField" Text="{Binding Date, StringFormat='{0:MM dd, yyyy}'}"  VerticalOptions="Center">
+                                <Label x:Name="dateField" Text="{Binding Date, StringFormat='{0:MM dd, yyyy}'}"  VerticalOptions="Center" HorizontalOptions="Start">
                                     <Label.Triggers>
                                         <DataTrigger TargetType="Label"
                                                 Binding="{Binding Source={x:Reference checkBox}, Path=IsChecked}" Value="True">
@@ -49,7 +49,7 @@
                                     </Label.Triggers>
                                 </Label>
 
-                                <Entry x:Name="noteField" Text="{Binding Notes}" Placeholder="Notes..." MaxLength="35"  VerticalOptions="CenterAndExpand" HorizontalOptions="FillAndExpand" Completed="OnEntryCompleted" Unfocused="OnEntryCompleted" BackgroundColor="{Binding Source={x:Static local:Strings.ColYowLGrey}}">
+                                <Entry x:Name="noteField" Text="{Binding Notes}" Placeholder="Notes..."  VerticalOptions="Center"  Completed="OnEntryCompleted" Unfocused="OnEntryCompleted" BackgroundColor="{Binding Source={x:Static local:Strings.ColYowLGrey}}">
                                     <Entry.Triggers>
                                         <DataTrigger TargetType="Entry"
                                                 Binding="{Binding Source={x:Reference checkBox}, Path=IsChecked}" Value="True">
